@@ -3,29 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <title>逃げるaタグ</title>
-    <style>
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-      #nigeteruLink {
-        position: absolute;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <a href="https://tomonya.github.io/class-chime/" id="nigeteruLink">逃げる機能付きチャイム一覧URL</a>
-    <script>
-      const link = document.getElementById('nigeteruLink');
-      link.addEventListener('mouseover', moveLink);
-      function moveLink() {
-        const x = Math.floor(Math.random() * (window.innerWidth - link.offsetWidth));
-        const y = Math.floor(Math.random() * (window.innerHeight - link.offsetHeight));
-        link.style.left = x + 'px';
-        link.style.top = y + 'px';
-      }
-    </script>
+    <a href="https://tomonya.github.io/class-chime/" id="nigeteruLink">クリックしてみて！</a>
+
+    <script src="script.js"></script>
   </body>
 </html>
+
